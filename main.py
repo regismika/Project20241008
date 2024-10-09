@@ -1,4 +1,5 @@
 # FUNKCIJOS
+from random import random
 
 # @@ -0,0 +1,59 @@
 
@@ -121,28 +122,94 @@
 #
 #     suma = skaicius1 + skaicius2
 #     print(f"{skaicius1} + {skaicius2} = {suma}")
-# for _ in range(3):                  # Iškviečiame funkciją keletą kartų
+# for i in range(3):                  # Iškviečiame funkciją keletą kartų
 #     atsitiktiniu_skaiciu_suma()
 
 # 6. Sukurkite ir iškvieskite funkciją, kurioje kintamuosiuose būtų saugoma
 # informacija apie policininką (vardas, pavardė, amžius, alga, etatas,
 # specializacija). Išveskite šią informaciją suformatuotai (pavyzdžiui įterpkite
 # į sakinį, ar išveskite sąrašu ar pan.).
+
 # def saugoti_informacija(vardas, pavarde, amzius, alga, etatas, specializacija):
 #     informacija = {
 #         "Vardas": vardas,
-#         "Pavarde": pavarde,
+#         "Pavardė": pavarde,
 #         "Amžius": amzius,
-#         "alga": alga,
-#         "etatas": etatas,
-#         "specializacija": specializacija
+#         "Alga": alga,
+#         "Etatas": etatas,
+#         "Specializacija": specializacija
 #     }
 #     return informacija
-# rezultatas = saugoti_informacija("Jonas", "Trijonis", "25", "2000", "patrulis", "Viesoji tvarka")
-# print(rezultatas)
+#
+# rezultatas = saugoti_informacija("Jonas", "Trijonis", "25", "2000", "patrulis", "Viešoji tvarka")
+#
+# print(f"Informacija apie asmenį:\n Vardas: {rezultatas['Vardas']}\n Pavardė: {rezultatas['Pavardė']}\n Amžius: {rezultatas['Amžius']} metai\n Alga: {rezultatas['Alga']} EUR\n Etatas: {rezultatas['Etatas']}\n Specializacija: {rezultatas['Specializacija']}")
+# print(f"{rezultatas['Vardas']} {rezultatas['Pavardė']} yra {rezultatas['Amžius']} metų amžiaus, dirba kaip {rezultatas['Etatas']}, specializuojasi {rezultatas['Specializacija']}, ir uždirba {rezultatas['Alga']} EUR per mėnesį.")
 
 
 # 7. Sukurkite funkciją, kuri išvestų 10 atsitiktinių skaičių. Po visų išvestų
 # skaičių turėtų padėti tuščią eilutę. Šią funkciją iškvieskite 5 kartus.
+
+import random
+# def udz7a():
+#     random_skaiciai = []
+#     for i in range(10):
+#         random_skaiciai.append(random.randint(1,50))
+#     print(f'{random_skaiciai} \n')
+#
+# for i in range(5):
+#     udz7a()
+#
+#
+# print("------------------")
+# def uzd7():
+#     for i in range(10):
+#         print(random.randint(1, 50))
+#
+# for i in range(0,5):
+#     uzd7()
+
 # 8. Sukurkite funkciją, kuri išvestų atsitiktinį skaičių. Už funkcijos ribų
 # sukurkite ciklą, kurį būtų vykdomas 10 kartų. Iškvieskite sukurtą funkciją cikle. Turėtumėte pamatyti 10 atsitiktinių skaičių.
+
+# def iskviesti_skaiciu():
+#     random_skaicius = []
+#     for i in range(1):
+#         random_skaicius.append(random.randint(1, 50))
+#     print(f'{random_skaicius}')
+# for i in range(10):
+#         iskviesti_skaiciu()
+
+# 9. Sukurkite funkciją pasisveikinimui, šiai funkcijai per argumentus
+# perduokite vardą, funkcijoje išveskite tekstą labas ir gautą vardą.
+# Sukurkite kitą funkciją, kuri irgi per argumentus gautų vardą, tačiau
+# pasakytų 'viso gero' ir patį vardą. Ne funkcijose susikurkite kintamąjį
+# vardui saugoti ir įrašykite vardą. Iškvieskite abi funkcijas, perduodant
+# kintamąjį joms.
+
+# def pasisveikinimo_funkcija(vardas):
+#     print('labas', vardas)
+#
+# def atsisveikinimas(vardas):
+#     print('viso gero', vardas)
+#
+# vardas = "Marius"
+# pasisveikinimo_funkcija(vardas)
+# atsisveikinimas(vardas)
+
+# 10.Sukurkite funkciją, kuriai perduotumėte du skaičius. Ši funkcija turi rasti
+# kuris skaičius yra didesnis ir išvesti gautą atsakymą, o jei skaičiai lygūs -
+# tuomet išvesti, kad skaičiai lygūs. Iškvieskite šią funkciją keletą kartų,
+# duodant skirtingus skaičius.
+
+
+# 11. Sukurkite funkciją, kuri per argumentus gautų automobilių duomenis
+# (markė, modelis, gamybos metai, darbinis tūris). Ši funkcija turėtų šiuos
+# duomenis išvesti kaip nors gražiai formatuotai. Iškvieskite šią funkciją du
+# kartus, perduodant skirtingus duomenis jai.
+# 12).Sukurkite funkciją sumai skaičiuoti, ši funkcija per argumentus turėtų
+# gauti du skaičius, bei išvesti patį veiksmą kartu su atsakymu (pvz 7 + 5 =
+# 12). Sukurkite tokias pačias funkcijas skirtumui, sandaugai ir dalmeniui
+# rasti. Sukurkite dar vieną funkciją, kuri sugeneruotų du atsitiktinius
+# skaičius, bei iškviestų kitas 4 funkcijas, perduodant joms sugeneruotus
+# skaičius. Šią bendrąją funkciją iškvieskite keletą kartų.
