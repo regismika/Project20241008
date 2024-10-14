@@ -202,14 +202,144 @@ import random
 # tuomet išvesti, kad skaičiai lygūs. Iškvieskite šią funkciją keletą kartų,
 # duodant skirtingus skaičius.
 
+from random import randint
+# def metal():
+#     print("Iveskite skaiciu1")
+#     skaicius1 = int(input())
+#     print("Iveskite skaiciu2")
+#     skaicius2 = int(input())
+#
+#     if skaicius1 > skaicius2:
+#         print(f'{skaicius1}  skaicius1 didesnis')
+#     elif skaicius1 < skaicius2:
+#         print(f'{skaicius2} skaicius2 didesnis')
+#     else:
+#         print(f'skaiciai yra lygus')
+#
+# metal()
 
 # 11. Sukurkite funkciją, kuri per argumentus gautų automobilių duomenis
 # (markė, modelis, gamybos metai, darbinis tūris). Ši funkcija turėtų šiuos
 # duomenis išvesti kaip nors gražiai formatuotai. Iškvieskite šią funkciją du
 # kartus, perduodant skirtingus duomenis jai.
+
+# def auto_duomenys():
+#     marke = input("Iveskite automobilio marke:")
+#     modelis = input("Iveskite automobilio modeli:")
+#     gamybos_metai = int(input("Iveskite automobilio gamybos metus:"))
+#     darbinis_turis = float(input("Iveskite automobilio darbini turi litrais:"))
+#
+#     print(f'Jūsų automobilis yra {marke} {modelis} pagamintas {gamybos_metai} m. su {darbinis_turis} l darbinio tūrio varikliu.')
+#
+# auto_duomenys()
+
 # 12).Sukurkite funkciją sumai skaičiuoti, ši funkcija per argumentus turėtų
 # gauti du skaičius, bei išvesti patį veiksmą kartu su atsakymu (pvz 7 + 5 =
 # 12). Sukurkite tokias pačias funkcijas skirtumui, sandaugai ir dalmeniui
 # rasti. Sukurkite dar vieną funkciją, kuri sugeneruotų du atsitiktinius
 # skaičius, bei iškviestų kitas 4 funkcijas, perduodant joms sugeneruotus
 # skaičius. Šią bendrąją funkciją iškvieskite keletą kartų.
+
+# def skaiciuojam_suma():
+#     sk1 = int(input("Iveskite pirmaji skaiciu: "))
+#     sk2 = int(input("Iveskite antraji skaiciu: "))
+#     suma = sk1 + sk2
+#     print(f'rezultatas: {sk1} + {sk2} = {suma}')
+#     skirtumas = sk1 - sk2
+#     print(f'rezulatas: {sk1} - {sk2} = {skirtumas}')
+#     sandauga = sk1 * sk2
+#     print(f'rezulatas: {sk1} * {sk2} = {sandauga}')
+#     dalmuo = sk1 / sk2
+#     print(f'rezulatas: {sk1} / {sk2} = {dalmuo}')
+
+def random_skaiciai():
+    sk1 = int(input(random))
+    sk2 = int(input(random))
+    suma = sk1 + sk2
+    print(f'rezultatas: {sk1} + {sk2} = {suma}')
+    skirtumas = sk1 - sk2
+    print(f'rezulatas: {sk1} - {sk2} = {skirtumas}')
+    sandauga = sk1 * sk2
+    print(f'rezulatas: {sk1} * {sk2} = {sandauga}')
+    dalmuo = sk1 / sk2
+    print(f'rezulatas: {sk1} / {sk2} = {dalmuo}')
+
+# skaiciuojam_suma()
+random_skaiciai()
+
+# 13.Susikurkite funkciją, kuri per argumentus priimtų žodžių masyvą.
+# Funkcijoje išveskite visus žodžius iš masyvo atskirose eilutėse, nurodant
+# žodžio ilgį (simbolių kiekį). Už funkcijos ribų susikurkite žodžių masyvą ir
+# užpildykite jį duomenimis. Iškvieskite sukurtą funkciją perduodant turimą
+# masyvą.
+# 14.Susikurkite funkciją, kuri per argumentus priimtų skaičių masyvą. Funkcija
+# turėtų atspausdinti visus skaičius, šalia jų išvedant to skaičiaus kvadratą ir
+# jį padalintą iš dviejų. Už funkcijos ribų susikurkite du skaičių masyvus ir
+# užpildykite jį duomenimis. Iškvieskite funkciją du kartus, kiekvieną kartą
+# perduodant skirtingą turimą masyvą
+# 15.Susikurkite funkciją, kuri per argumentus priimtų pažymių masyvą, bei
+# studento vardą su pavarde. Funkcija turėtų išvesti studento vardą ir
+# pavardę, jo pažymius. Taip pat, suskaičiuoti vidurkį, bei jį išvesti. Už
+# funkcijos ribų susikurkite reikiamus kintamuosius ir masyvus, arba
+# objektus studentų pažymiams saugoti ir užpildykite juos duomenimis.
+# Iškvieskite šią funkciją perduodant visus reikalingus duomeni
+# 16.Susikurkite funkciją, kuri per argumentus priimtų skaičių masyvą. Funkcija
+# turėtų rasti didžiausią skaičių iš masyvo bei išvesti gautą atsakymus. Taip
+# pat, susikurkite funkciją, kuri per argumentus priimtų masyvą ir į jį
+# sugeneruotų pasirinktą kiekį atsitiktinių skaičių. Susikurkite tris tuščius
+# masyvus. Iškvieskite atsitiktinių skaičių generavimo funkciją tris kartus,
+# kiekvieną kartą perduodant funkcijai vis kitą masyvą. Kai duomenys bus
+# užpildyti, masyvuose esančią informaciją išsiveskite norimu būdu (per
+# console.log arba per dar atskirą funkciją). Tuomet kvieskite didžiausio
+# skaičiaus paieškos funkciją tris kartus, kiekvieną kartą perduodant
+# skirtingą masyvą į ją.
+# 17.Susikurkite funkciją, kuri grąžintų bet kokį jūsų norimą sakinį. Iškvieskite
+# šią funkciją ir išspausdinkite gautus rezultatus.
+# 18.Susikurkite funkciją, kuri grąžintų atsitiktinai sugeneruotą skaičių.
+# Iškvieskite šią funkciją kelis kartus ir gautus atsakymus išveskite kokiu
+# norite būdu.
+# 19.Susikurkite funkciją, kuri per argumentus priimtų studento vardą ir
+# vidurkį. Ši funkcija turėtų sugeneruoti iš to sakinį (pvz Studentas Tomas
+# turi vidurkį 8.7) ir tai grąžinti kaip atsakymą. Iškvieskite šią funkciją bent
+# porą kartų, perduodant vis skirtingus duomenis. Gautus atsakymus
+# išveskite.
+# 20.Susikurkite funkciją, kuri per argumentus gautų skaičių. Ji turėtų surasti
+# duoto skaičiaus mažiausią daliklį (skaičių iš kurio dalinasi be liekanos). Už
+# funkcijos ribų sukite ciklą nuo 10 iki 30 ir kiekvienoje ciklo iteracijoje
+# iškvieskite šią funkciją, perduodant ciklo kintamąjį.
+# 21.Susikurkite funkciją, kuri per argumentus gautų skaičių. Ji turėtų patikrinti
+# ar šis skaičius yra pirminis (grąžina True jei pirminis, ir False jei ne
+# pirminis). Už funkcijos ribų sukite ciklą nuo 2 iki 15, kiekvienoje ciklo
+# iteracijoje išveskite tikrinamą skaičių ir šalia jo iškviestos funkcijos
+# atsakymą (pvz 10 false, 11 true, ...)
+# 22.Susikurkite bent 3 matematines funkcijas, priimančias reikiamus
+# argumentus (pvz suma iš dviejų skaičių, suma iš trijų skaičių, skirtumas,
+# sandauga, dalyba) ir grąžinančias atitinkamus atsakymus. Taip pat,
+# susikurkite funkciją, kurioje būtų sugeneruojamas reikiamas kiekis
+# atsitiktinių skaičių ir išvedami visų skaičiavimų atsakymai su veiksmais
+# (iškviečiant atitinkamas kitas funkcijas ir perduodant reikiamus
+# kintamuosius) (pagal 23 pavyzdį). Iškvieskite šią pagrindinę funkciją bent
+# kartą.
+# 23.Susikurkite funkciją kuri priimtų skaičių masyvą per argumentus. Ši
+# funkcija turėtų rasti duotųjų skaičių sumą ir grąžinti gautą atsakymą. Už
+# funkcijos ribų susikurkite du skaičių masyvus ir užpildykite juos
+# duomenimis. Iškvieskite turimą funkciją du kartus, jai abu kartus
+# perduodant skirtingą masyvą. Gautus atsakymus išveskite. Taip pat,
+# raskite kuri suma gavosi didesnė ir išveskite atsakymą.
+# 24.Susikurkite funkciją kuri per argumentus priimtų žodžių masyvą. Ji turėtų
+# rasti ir grąžinti ilgiausią žodį masyve. Už funkcijos ribų susikurkite žodžių
+# masyvą. Iškvieskite funkciją perduodant jai žodžių masyvą. Gautą
+# atsakymą išveskite, taip pat, nurodykite šio žodžio ilgį.
+# 25.Susikurkite funkciją kuri per argumentus priimtų pažymių masyvą. Ji
+# turėtų patikrinti ar visi pažymiai teigiami: jei visi teigiami turėtų grąžintų
+# True kaip atsakymą, o jei yra bent vienas neigiamas - False. Susikurkite du
+# pažymių masyvus. Iškvieskite šią funkciją du kartus, abu kartus
+# perduodant skirtingus masyvus. Gautus atsakymus paverskite į tekstą
+# (jeigu gavote True - išveskite tekstą 'visi studento pažymiai teigiami', jei
+# False - 'studentas turi bent vieną neigiamą pažymį'). Šiam iškonvertavimui
+# iš True/False į tekstą galite pamėginti pasikurti atskirą funkciją, jai
+# perduoti kitos funkcijos atsakymą
+# 26.Pabandykite parašyti bent dvi pasirinktas funkcijas, kuriose būtų
+# naudojami default parametrai. Iškvieskite šias funkcijas įvairiais būdais
+# (perduodant visus argumentus, bei neperduodant tų kuriuos galima
+# praleisti (turinčius default reikšmes))
