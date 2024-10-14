@@ -251,21 +251,38 @@ from random import randint
 #     print(f'rezulatas: {sk1} * {sk2} = {sandauga}')
 #     dalmuo = sk1 / sk2
 #     print(f'rezulatas: {sk1} / {sk2} = {dalmuo}')
+import random
+# NEBAIGTA
+# def suma (random_sk1, random_sk2):
+#     return random_sk1 + random_sk2
+# def skirtumas (random_sk1, random_sk2):
+#     return random_sk1 - random_sk2
+# def sandauga (random_sk1, random_sk2):
+#     return random_sk1 * random_sk2
+# def dalmuo (random_sk1, random_sk2):
+#     return (random_sk1 / random_sk2)
+#
+# random_sk1 = random.randint(1, 100)
+# random_sk2 = random.randint(1, 100)
+#
+#
+# pasirinkimas = (suma, skirtumas, sandauga, dalmuo)
+#
+# if pasirinkimas == "suma":
+#     rezultatas = suma(random_sk1, random_sk2)
+# elif pasirinkimas == "skirtumas":
+#     rezultatas = skirtumas(random_sk1, random_sk2)
+# elif pasirinkimas == "sandauga":
+#     rezultatas = sandauga(random_sk1, random_sk2)
+# elif pasirinkimas == "dalmuo":
+#     rezultatas = dalmuo(random_sk1, random_sk2)
+# else:
+#     rezultatas = "Neteisingas pasirinkimas!"
+#
+#     print(f"Rezultatas: {rezultatas}")
 
-def random_skaiciai():
-    sk1 = int(input(random))
-    sk2 = int(input(random))
-    suma = sk1 + sk2
-    print(f'rezultatas: {sk1} + {sk2} = {suma}')
-    skirtumas = sk1 - sk2
-    print(f'rezulatas: {sk1} - {sk2} = {skirtumas}')
-    sandauga = sk1 * sk2
-    print(f'rezulatas: {sk1} * {sk2} = {sandauga}')
-    dalmuo = sk1 / sk2
-    print(f'rezulatas: {sk1} / {sk2} = {dalmuo}')
 
-# skaiciuojam_suma()
-random_skaiciai()
+
 
 # 13.Susikurkite funkciją, kuri per argumentus priimtų žodžių masyvą.
 # Funkcijoje išveskite visus žodžius iš masyvo atskirose eilutėse, nurodant
